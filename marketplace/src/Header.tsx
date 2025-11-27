@@ -8,6 +8,12 @@ import scaleIcon from './assets/scale.png';
 import choosenIcon from './assets/choosen.png';
 import notificationIcon from './assets/notification.png';
 import cartIcon from './assets/cart.png';
+import phoneIcon from './assets/phone.png';
+import laptopIcon from './assets/laptop.png';
+import ovenIcon from './assets/oven.png';
+import washmachIcon from './assets/washing-machine.png';
+import tvIcon from './assets/tv.png';
+import smartwatchIcon from './assets/smartwatch.png';
 
 function Header() {
   return (
@@ -85,10 +91,39 @@ function Header() {
         <span className="header__divider">Чорна п'ятниця</span>
         <img src="https://cdn.comfy.ua/media/x/brending-bannera/1366x200_1072.jpg"></img>
 
-        <div className="products">
-            <div className="products__title">
-              
-              Товари зі знижками до -50%
+        <button>
+
+        </button>
+        <div className="categories">
+            <div className="categories__title">
+              <div className='categorie-count'>1850</div>
+              <img src={phoneIcon} className="icon" />
+              Смартфони та телефони
+            </div>
+            <div className="categories__title">
+              <div className='categorie-count'>10140</div>
+              <img src={laptopIcon} className="icon" />
+              Ноутбуки, планшети та комп'ютерна техніка
+            </div>
+            <div className="categories__title">
+              <div className='categorie-count'>3877</div>
+              <img src={ovenIcon} className="icon" />
+              Техніка для кухні
+            </div>
+            <div className="categories__title">
+              <div className='categorie-count'>1552</div>
+              <img src={washmachIcon} className="icon" />
+              Техніка для дому
+            </div>
+            <div className="categories__title">
+              <div className='categorie-count'>670</div>
+              <img src={tvIcon} className="icon" />
+              Телевізори та мультимедіа
+            </div>
+            <div className="categories__title">
+              <div className='categorie-count'>364</div>
+              <img src={smartwatchIcon} className="icon" />
+              Смарт-годинники та гаджети
             </div>
         </div>
       </div>
