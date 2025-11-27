@@ -46,8 +46,8 @@ function Header() {
             <input type="text" placeholder="Я шукаю…" className="search__input" />
             <img src={microphoneIcon} alt="microphone" className="search__mic" />
             <button className="search__btn">
-              <img src={magnifyIcon} alt="magnify" className="icon" />
               Знайти
+              <img src={magnifyIcon} alt="magnify" className="icon" />
             </button>
           </div>
 
@@ -72,7 +72,7 @@ function Header() {
               <span>Повідомлення</span>
             </div>
 
-            <div className="action header__cart">
+            <div className="action action--row header__cart">
               <img src={cartIcon} className="icon" />
               <span>Кошик</span>
             </div>

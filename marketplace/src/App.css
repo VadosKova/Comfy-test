@@ -23,8 +23,8 @@ a {
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 
 .discount {
@@ -61,9 +61,15 @@ body::before {
   width: 40px;
   padding: 5px 5px;
   background-color: #F2F2F2;
-  color: #444;
+  color: #999999;
+  font-weight: 690;
   border-radius: 15px;
   text-align: center;
+}
+
+.header__city {
+  margin-top: 7px;
+  font-size: 12px;
 }
 
 .header__top {
@@ -78,22 +84,27 @@ body::before {
   display: flex;
   gap: 18px;
   font-weight: 600;
+  margin-left: -20px;
 }
 
 .header__nav {
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  margin-left: auto;
 }
 
 .header__nav a {
   color: #444;
   font-weight: 500;
+  font-size: 12px;
 }
 
 .header__help {
   color: #FF671F;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 690;
+  font-size: 12px;
+  margin-left: 40px;
 }
 
 .header__main {
@@ -101,6 +112,7 @@ body::before {
   align-items: center;
   gap: 25px;
   padding: 18px 40px;
+  margin-top: -10px;
 }
 
 .header__logo img {
@@ -137,28 +149,29 @@ body::before {
   width: 100%;
   padding: 12px 45px 12px 15px;
   font-size: 16px;
+  background-color: #fff;
   border: 2px solid #43B02A;
-  border-radius: 10px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .search__mic {
   position: absolute;
-  right: 110px;
+  right: 140px;
   width: 22px;
   height: 22px;
   cursor: pointer;
 }
 
 .search__btn {
+  height: 46px;
   background: #43B02A;
   color: #fff;
   border: none;
   padding: 12px 18px;
   font-weight: 600;
-  border-radius: 10px;
-  margin-left: 10px;
+  border-radius: 0px 10px 10px 0px;
   display: flex;
-  gap: 8px;
+  gap: 10px;
   align-items: center;
   cursor: pointer;
 }
@@ -183,6 +196,21 @@ body::before {
   margin-bottom: 5px;
 }
 
+.action--row {
+  flex-direction: row !important;
+  gap: 10px;
+  background-color: #F2F2F2;
+  padding: 12px 15px;
+  border-radius: 7px;
+}
+
+.action--row img {
+  width: 17px;
+  height: 17px;
+  margin-bottom: 0;
+}
+
 .header__cart span {
+  font-size: 16px;
   font-weight: 700;
 }
