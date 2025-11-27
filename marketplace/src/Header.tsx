@@ -79,6 +79,19 @@ function Header() {
           </div>
         </div>
       </header>
+
+      <div className='section-header'>
+        <span className="header__divider">Головна</span>
+        <span className="header__divider">Чорна п'ятниця</span>
+        <img src="https://cdn.comfy.ua/media/x/brending-bannera/1366x200_1072.jpg"></img>
+
+        <div className="products">
+            <div className="products__title">
+              
+              Товари зі знижками до -50%
+            </div>
+        </div>
+      </div>
     </>
   )
 }
