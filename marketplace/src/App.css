@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.discount {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  font-size: 14px;
+}
+
+.header__left {
+  display: flex;
+  gap: 18px;
+  font-weight: 600;
+}
+
+.header__nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header__nav a {
+  color: #444;
+  font-weight: 500;
+}
+
+.header__help {
+  color: #FF671F;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.header__main {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 18px 40px;
+}
+
+.header__logo img {
+  height: 50px;
+  cursor: pointer;
+}
+
+.header__catalog-btn {
+  background: #43B02A;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.header__catalog-btn img {
+  width: 22px;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+.search__input {
+  width: 100%;
+  padding: 12px 45px 12px 15px;
+  font-size: 16px;
+  border: 2px solid #43B02A;
+  border-radius: 10px;
+}
+
+.search__mic {
+  position: absolute;
+  right: 110px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.search__btn {
+  background: #43B02A;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-left: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.action img {
+  width: 26px;
+  height: 26px;
+  margin-bottom: 5px;
+}
+
+.header__cart span {
+  font-weight: 700;
+}
