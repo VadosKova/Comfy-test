@@ -8,6 +8,9 @@ import tvIcon from './assets/tv.png';
 import smartwatchIcon from './assets/smartwatch.png';
 import leftIcon from './assets/left-arrow.png';
 import rightIcon from './assets/right-arrow.png';
+import sortIcon from './assets/sort.png';
+import secIcon from './assets/2x2.png';
+import thrIcon from './assets/3x3.png';
 
 function App() {
 
@@ -66,6 +69,23 @@ function App() {
           </button>
         </div>
       </div>
+
+      <section className="products-section">
+        <h2>Чорна п'ятниця 2025</h2>
+        <h3>10000 товарів</h3>
+        <h4>сторінка 1</h4>
+
+        <div className='basic-filters'>
+          <div className='price-per'>
+            <span>Повна ціна</span>
+            <span>Ціна в місяць</span>
+          </div>
+
+          <div className='sort'>
+
+          </div>
+        </div>
+      </section>
     </>
   )
 }
