@@ -26,7 +26,7 @@ function App() {
           <span className="header__divider">Чорна п'ятниця</span>
         </div>
         
-        <img src="https://cdn.comfy.ua/media/x/brending-bannera/1366x200_1072.jpg"></img>
+        <img src="https://cdn.comfy.ua/media/x/brending-bannera/1366x200_1072.jpg" />
 
         <div className="categories-wrapper">
           <button className='not-active-carousel'>
@@ -82,7 +82,14 @@ function App() {
           </div>
 
           <div className='sort'>
+            <img src={sortIcon} className="icon" />
+            За популярністю
+          </div>
 
+          <div className='view-options'>
+            <img src={secIcon} className="icon" />
+            |
+            <img src={thrIcon} className="icon" />
           </div>
         </div>
       </section>
