@@ -14,6 +14,8 @@ import ovenIcon from './assets/oven.png';
 import washmachIcon from './assets/washing-machine.png';
 import tvIcon from './assets/tv.png';
 import smartwatchIcon from './assets/smartwatch.png';
+import leftIcon from './assets/left-arrow.png';
+import rightIcon from './assets/right-arrow.png';
 
 function Header() {
   return (
@@ -91,8 +93,8 @@ function Header() {
         <span className="header__divider">Чорна п'ятниця</span>
         <img src="https://cdn.comfy.ua/media/x/brending-bannera/1366x200_1072.jpg"></img>
 
-        <button>
-
+        <button className='not-active-carousel'>
+          <img src={leftIcon} className="icon" />
         </button>
         <div className="categories">
             <div className="categories__title">
@@ -126,6 +128,9 @@ function Header() {
               Смарт-годинники та гаджети
             </div>
         </div>
+        <button className='active-carousel'>
+          <img src={rightIcon} className="icon" />
+        </button>
       </div>
     </>
   )
