@@ -89,14 +89,18 @@ function Header() {
       </header>
 
       <div className='section-header'>
-        <span className="header__divider">Головна</span>
-        <span className="header__divider">Чорна п'ятниця</span>
+        <div className="header__breadcrumbs">
+          <span className="header__divider">Головна</span>
+          <span className="header__divider">Чорна п'ятниця</span>
+        </div>
+        
         <img src="https://cdn.comfy.ua/media/x/brending-bannera/1366x200_1072.jpg"></img>
 
-        <button className='not-active-carousel'>
-          <img src={leftIcon} className="icon" />
-        </button>
-        <div className="categories">
+        <div className="categories-wrapper">
+          <button className='not-active-carousel'>
+            <img src={leftIcon} className="icon" />
+          </button>
+          <div className="categories">
             <div className="categories__title">
               <div className='categorie-count'>1850</div>
               <img src={phoneIcon} className="icon" />
@@ -127,10 +131,11 @@ function Header() {
               <img src={smartwatchIcon} className="icon" />
               Смарт-годинники та гаджети
             </div>
+          </div>
+          <button className='active-carousel'>
+            <img src={rightIcon} className="icon" />
+          </button>
         </div>
-        <button className='active-carousel'>
-          <img src={rightIcon} className="icon" />
-        </button>
       </div>
     </>
   )

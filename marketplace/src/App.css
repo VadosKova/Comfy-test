@@ -217,11 +217,25 @@ body::before {
 
 .section-header {
   width: 100%;
-  margin-top: 20px;
+  margin-top: -10px;
   padding: 0 40px;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.header__breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 40px;
 }
 
 .header__divider {
@@ -238,14 +252,21 @@ body::before {
 
 .section-header img {
   width: 100%;
-  border-radius: 15px;
   margin-top: 10px;
+}
+
+.categories-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 20px;
 }
 
 .not-active-carousel,
 .active-carousel {
-  position: absolute;
-  top: 415px;
+  position: static;
   width: 40px;
   height: 40px;
   background: white;
@@ -262,10 +283,12 @@ body::before {
 .active-carousel img {
   width: 22px;
   height: 22px;
+  margin-top: 0px;
 }
 
 .not-active-carousel {
   left: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .active-carousel {
@@ -273,21 +296,21 @@ body::before {
 }
 
 .categories {
-  width: 100%;
-  margin-top: 15px;
-  padding: 0 10px;
+  flex: 1;
   display: flex;
+  gap: 20px;
   justify-content: space-between;
 }
 
 .categories__title {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
   background: #F2F2F2;
   padding: 12px 18px;
   border-radius: 15px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   cursor: pointer;
   transition: 0.2s;
@@ -298,15 +321,19 @@ body::before {
 }
 
 .categories__title img {
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
+  display: block;
 }
 
 .categorie-count {
-  font-size: 12px;
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  font-size: 10px;
   background-color: #FF671F;
   color: #fff;
-  padding: 3px 8px;
+  padding: 2px 6px;
   border-radius: 10px;
-  font-weight: 700;
+  z-index: 2;
 }
