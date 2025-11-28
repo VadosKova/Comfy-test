@@ -223,7 +223,7 @@ function App() {
 
           <div className="missing-filters">
             <p>Не вистачає фільтрів?</p>
-            <button className="suggest-btn">Запропонуй</button>
+            <button className="suggest-btn">Запропонуй!</button>
           </div>
         </aside>
 
