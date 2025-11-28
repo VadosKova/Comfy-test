@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Header from './Header'
 import './App.css'
 import phoneIcon from './assets/phone.png';
@@ -13,6 +14,7 @@ import secIcon from './assets/2x2.png';
 import thrIcon from './assets/3x3.png';
 
 function App() {
+  const [activePrice, setActivePrice] = useState("full");
 
   return (
     <>
@@ -77,8 +79,8 @@ function App() {
 
         <div className='basic-filters'>
           <div className='price-per'>
-            <span>Повна ціна</span>
-            <span>Ціна в місяць</span>
+            <span className={activePrice === "full" ? "active-price" : ""} onClick={() => setActivePrice("full")}>Повна ціна</span>
+            <span className={activePrice === "month" ? "active-price" : ""} onClick={() => setActivePrice("month")}>Ціна в місяць</span>
           </div>
 
           <div className='sort'>
@@ -87,12 +89,149 @@ function App() {
           </div>
 
           <div className='view-options'>
-            <img src={secIcon} className="icon" />
-            |
             <img src={thrIcon} className="icon" />
+            |
+            <img src={secIcon} className="icon" />
           </div>
         </div>
       </section>
+
+      <div className="filters-layout">
+        <aside className="filters-panel">
+          <div className="filter-block">
+            <h3>Ціна</h3>
+            <div className="price-inputs">
+              <input type="number" placeholder="8" />
+              <span className="dash">—</span>
+              <input type="number" placeholder="699 999" />
+            </div>
+            <button className="apply-btn">ЗАСТОСУВАТИ</button>
+          </div>
+
+          <div className="filter-block">
+            <h3>Розділ</h3>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Смартфони та телефони</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Ноутбуки, планшети та комп'ютерна техніка</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Техніка для кухні</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Техніка для дому</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Телевізори та мультимедіа</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Смарт-годинники та гаджети</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Аудіо, фото та відео</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Ігрові консолі та геймінг</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Краса і здоров'я</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Посуд</span>
+            </div>
+          </div>
+
+          <div className="filter-block">
+            <h3>Бренд</h3>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Samsung</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Apple</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Lenovo</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Xiaomi</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Bosch</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Philips</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Tefal</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Asus</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>LG</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Daewoo</span>
+            </div>
+          </div>
+
+          <div className="filter-block">
+            <h3>Наявність</h3>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>Тільки в наявності</span>
+            </div>
+            <div className="filter-row">
+              <input type="checkbox" />
+              <span>В магазині</span>
+            </div>
+          </div>
+
+          <div className="filter-block">
+            <h3>Діючі акції</h3>
+            <div className="filter-row"><input type="checkbox" /><span>ЧОРНА П'ЯТНИЦЯ</span></div>
+            <div className="filter-row"><input type="checkbox" /><span>Знижка на комплект</span></div>
+            <div className="filter-row"><input type="checkbox" /><span>КРАЩ</span></div>
+            <div className="filter-row"><input type="checkbox" /><span>КРАЩ online</span></div>
+            <div className="filter-row"><input type="checkbox" /><span>5% бонусів за оплату онлайн</span></div>
+            <div className="filter-row"><input type="checkbox" /><span>ДОСТАВИМО за 1₴ в квартиру</span></div>
+            <div className="filter-row"><input type="checkbox" /><span>ДОСТАВИМО за 1₴ у відділення</span></div>
+            <div className="filter-row"><input type="checkbox" /><span>Оплата частинами</span></div>
+            <div className="filter-row"><input type="checkbox" /><span>Знижка</span></div>
+          </div>
+
+          <div className="missing-filters">
+            <p>Не вистачає фільтрів?</p>
+            <button className="suggest-btn">Запропонуй</button>
+          </div>
+        </aside>
+
+        <div className="products-placeholder">
+          
+        </div>
+
+      </div>
     </>
   )
 }
