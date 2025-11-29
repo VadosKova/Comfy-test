@@ -12,6 +12,26 @@ import rightIcon from './assets/right-arrow.png';
 import sortIcon from './assets/sort.png';
 import secIcon from './assets/2x2.png';
 import thrIcon from './assets/3x3.png';
+import basketIcon from './assets/basket.png';
+import choosenIcon from './assets/choosen.png';
+import scaleIcon from './assets/scale.png';
+import starIcon from './assets/star.png';
+import smsIcon from './assets/sms.png';
+import bonusIcon from './assets/bonus.png';
+
+import card1 from './assets/card1.jpg'
+import card2 from './assets/card2.jpg'
+import card3 from './assets/card3.jpg'
+import card4 from './assets/card4.jpeg'
+import card5 from './assets/card5.jpg'
+import card6 from './assets/card6.jpg'
+import card7 from './assets/card7.jpg'
+import card8 from './assets/card8.jpg'
+import card9 from './assets/card9.jpg'
+import card10 from './assets/card10.jpeg'
+import card11 from './assets/card11.jpg'
+
+import banner from './assets/banner.png';
 
 function App() {
   const [activePrice, setActivePrice] = useState("full");
