@@ -329,6 +329,26 @@ function App() {
               </div>
             )
           )}
+
+          <div className="pagination">
+            <button className="pagination__btn disabled">
+              ← Назад
+            </button>
+
+            <div className="pagination__pages">
+              <span className="page">1</span>
+              <span className="page active">2</span>
+              <span className="page">3</span>
+              <span className="page">4</span>
+              <span className="page">5</span>
+              <span className="page dots">...</span>
+              <span className="page">200</span>
+            </div>
+
+            <button className="pagination__btn">
+              Вперед →
+            </button>
+          </div>
         </div>
       </div>
     </>
