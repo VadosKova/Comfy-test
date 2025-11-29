@@ -312,7 +312,7 @@ function App() {
                 </div>
                 <div className="old-price-row">
                   <span className="old-price">{p.oldPrice} ₴</span>
-                  <span className="discount">-{p.discount} ₴</span>
+                  <span className="discount-card">-{p.discount} ₴</span>
                 </div>
 
                 <div className="price-row">
